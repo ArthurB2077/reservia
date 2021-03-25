@@ -157,13 +157,104 @@
     height: 0.8em;
 }
 
-#rsv-filter__title
+.rsv-filter__title
 {
-    padding-right: 2em;
+    padding-right: 1em;
 }
 
 .rsv-filter--txt
 {
     color: black;
     padding-right: 1.5em;
+}
+
+.rsv-info
+{
+    display: flex;
+    align-items: center;
+}
+
+.rsv-info--icon
+{
+    color: white;
+    background-color: #0065FC;
+    margin-right: 1em;
+    border: 0.5px solid;
+    border-color: grey;
+    border-radius: 1em;
+
+}
+
+.rsv-lodging--container
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rsv-lodging--classic
+{
+    background-color: #F2F2F2;
+    width: 70%;
+    flex-direction: column;
+    padding: 2em;
+    border-radius: 1.5em;
+}
+
+.rsv-lodging--popular
+{
+    background-color: #F2F2F2;
+    width: 30%;
+    flex-direction: column;
+    padding: 2em;
+    border-radius: 1.5em;
+}
+
+.rsv-lodging--images
+{
+    width: 18em;
+    height: 8em;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+
+.rsv-lodging--images__pop
+{
+    width: 11em;
+    height: 11em;
+}
+
+.rsv-lodging--list
+{
+    display: flex;
+}
+
+.rsv-lodging--poplist
+{
+    list-style-type: none;
+}
+
+.rsv-lodging--rating
+{
+    list-style-type: none;
+    display: flex;
+}
+
+.rsv-lodging--classic-card
+{
+    background-color: white;
+    border-radius: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+
+}
+
+.rsv-lodging--classic-carcontent
+{
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+.checked
+{
+    color: #0065FC;
 }
