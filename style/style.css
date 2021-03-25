@@ -98,7 +98,7 @@
     outline-width: 0;
 }
 
-.rsv-serch__button
+.rsv-search__button
 {
     padding: 1em;
     background: #2196F3;
@@ -117,12 +117,20 @@
     display: flex;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-
 }
+
 .rsv-filter__modal
 {
     margin-right: 1em;
     color:#0065FC;
+    border: 2px solid;
+    border-color: #F2F2F2;
+    border-radius: 2em;
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+
+
 }
 
 .rsv-filter__icon
@@ -130,7 +138,32 @@
     margin-right: 1em;
     border: 1px solid;
     border-color: #DEEBFF;
-    border-radius: 1.5em;
+    border-radius: 2em;
     padding: 1em;
     background-color: #DEEBFF;
+}
+
+.rsv-filter__icon:hover
+{
+    margin-right: 1em;
+    border-radius: 2em;
+    padding: 1em;
+    background-color:#2196F3;
+    color: white;
+}
+
+.rsv-filter--ifam
+{
+    height: 0.8em;
+}
+
+#rsv-filter__title
+{
+    padding-right: 2em;
+}
+
+.rsv-filter--txt
+{
+    color: black;
+    padding-right: 1.5em;
 }
