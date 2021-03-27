@@ -210,19 +210,11 @@ body
     margin-bottom: 1.5em;
 }
 
-.rsv-lodging--popular
-{
-    background-color: #F2F2F2;
-    width: 30%;
-    flex-direction: column;
-    padding: 2em;
-    border-radius: 1.5em;
-    margin-left: 2.5em;
-}
+
 
 .rsv-lodging--images
 {
-    width: 18em;
+    width: 100%;
     height: 8em;
     border-top-left-radius: 1.5em;
     border-top-right-radius: 1.5em;
@@ -285,6 +277,16 @@ body
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1em;
+}
+
+.rsv-lodging--popular
+{
+    background-color: #F2F2F2;
+    width: 30%;
+    flex-direction: column;
+    padding: 2em;
+    border-radius: 1.5em;
+    margin-left: 2.5em;
 }
 
 .rsv-popular--card
@@ -379,4 +381,307 @@ body
 .rsv-footer__content1
 {
     margin-left: 2.5em;
+}
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1246px) and (max-width: 1750px)
+{
+    .rsv-lodging--container
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .rsv-lodging--classic
+    {
+        background-color: #F2F2F2;
+        width: 95%;
+        flex-direction: column;
+        padding: 2em;
+        border-radius: 1.5em;
+    }
+
+    .rsv-lodging--list
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rsv-lodging--classic-card
+    {
+        display: flex;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 1.5em;
+        padding: 0.5em;
+        margin-bottom: 2.5em;
+        width: 30%;
+    }
+
+    .rsv-lodging--classic-carcontent
+    {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2em;
+    }
+
+    .rsv-lodging--images
+    {
+        width: 11em;
+        height: 11em;
+        border-top-left-radius: 1.5em;
+        border-bottom-left-radius: 1.5em;
+        border-top-right-radius: 0;
+    }
+
+    .rsv-lodging--pophead
+    {
+        display: flex;
+        margin-bottom: 1em;
+    }
+
+    .rsv-lodging--popular
+    {
+        background-color: #F2F2F2;
+        width: 95%;
+        flex-direction: column;
+        padding: 2em;
+        border-radius: 1.5em;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+
+
+    .rsv-lodging--poplist
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .rsv-popular--card
+    {
+        display: flex;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 1.5em;
+        padding: 0.5em;
+        margin-bottom: 2.5em;
+        margin-right: 2em;
+        width: 30%;
+    }
+
+    .rsv-activities--container
+    {
+        flex-direction: column;
+        margin-bottom: 8em;
+    }
+
+    .rsv-activities--card1
+    {
+        height: 40em;
+        width: 100%;
+        margin-bottom: 3em;
+        background-color: white;
+        border-radius: 2.5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .rsv-activities--card2
+    {
+        height: 18em;
+        width: 47%;
+        margin-bottom: 3em;
+        border-radius: 2.5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .rsv-activities__carddouble
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #activites
+    {
+        margin-top: 3em;
+    }
+
+
+    #rsv-footer--container
+    {
+        display: flex;
+        background-color: #F2F2F2;
+        justify-content: space-between;
+    }
+
+    .rsv-footer--content
+    {
+        margin-right: 4em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        white-space: nowrap;
+    }
+
+}
+
+@media all and (min-width: 270px) and (max-width: 1245px)
+{
+    .rsv-filter__title
+    {
+        padding-right: 1em;
+        flex-wrap: wrap-reverse;
+    }
+
+
+    .rsv-lodging--container
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .rsv-lodging--classic
+    {
+        background-color: #F2F2F2;
+        width: 95%;
+        flex-direction: column;
+        padding: 2em;
+        border-radius: 1.5em;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    .rsv-lodging--list
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .rsv-lodging--classic-card
+    {
+        display: flex;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 1.5em;
+        padding: 0.5em;
+        margin-bottom: 2.5em;
+        margin-right: 2em;
+        width: 100%;
+    }
+
+    .rsv-lodging--classic-carcontent
+    {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2em;
+        width: 50%;
+    }
+
+    .rsv-lodging--images
+    {
+        width: 50%;
+        height: 300px;
+        border-top-left-radius: 1.5em;
+        border-bottom-left-radius: 1.5em;
+        border-top-right-radius: 0;
+    }
+
+    .rsv-lodging--pophead
+    {
+        display: flex;
+        margin-bottom: 1em;
+    }
+
+    .rsv-lodging--popular
+    {
+        background-color: #F2F2F2;
+        width: 95%;
+        flex-direction: column;
+        padding: 2em;
+        border-radius: 1.5em;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+
+    .rsv-popular--card
+    {
+        display: flex;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 1.5em;
+        padding: 0.5em;
+        margin-bottom: 2.5em;
+        margin-right: 2em;
+        width: 100%;
+    }
+
+    .rsv-lodging--images__pop
+    {
+        width: 50%;
+        height: 300px;
+        border-top-left-radius: 1.5em;
+        border-bottom-left-radius: 1.5em;
+    }
+
+
+
+    .rsv-activities--container
+    {
+        flex-direction: column;
+        margin-bottom: 8em;
+    }
+
+    .rsv-activities--card1
+    {
+        height: 40em;
+        width: 100%;
+        margin-bottom: 3em;
+        background-color: white;
+        border-radius: 2.5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .rsv-activities--card2
+    {
+        height: 18em;
+        width: 47%;
+        margin-bottom: 3em;
+        border-radius: 2.5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .rsv-activities__carddouble
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #activites
+    {
+        margin-top: 3em;
+    }
+
+
+    #rsv-footer--container
+    {
+        display: flex;
+        background-color: #F2F2F2;
+        justify-content: space-between;
+    }
+
+    .rsv-footer--content
+    {
+        margin-right: 4em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        white-space: nowrap;
+    }
 }
