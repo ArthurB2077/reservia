@@ -11,6 +11,11 @@
 }
 
 
+body
+{
+    margin: 0;
+}
+
 
 #rsv {
     padding-top: 0px;
@@ -357,8 +362,21 @@
     margin-left: 2em;
 }
 
-.rsv-footer--container
+#rsv-footer--container
 {
     display: flex;
-    justify-content: space-between;
+    background-color: #F2F2F2;
+}
+
+.rsv-footer--content
+{
+    margin-right: 30em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    white-space: nowrap;
+}
+
+.rsv-footer__content1
+{
+    margin-left: 2.5em;
 }
