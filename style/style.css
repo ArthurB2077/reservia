@@ -1,13 +1,14 @@
 /*Body style content start here*/
 @font-face
 {
-    /*    font-family: Raleway;
-        src : url("/style/font/variable/Raleway-VariableFont_wght.ttf");*/
+        font-family: Raleway;
+        src : local("/style/font/variable/Raleway-VariableFont_wght.ttf");
+
 }
 
 *
 {
-    font-family: Raleway, Arial;
+    font-family: 'Raleway', serif;
 }
 
 
