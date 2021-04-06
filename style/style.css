@@ -3,7 +3,6 @@
 {
         font-family: Raleway;
         src : local("/style/font/variable/Raleway-VariableFont_wght.ttf");
-
 }
 
 *
@@ -11,12 +10,10 @@
     font-family: 'Raleway', serif;
 }
 
-
 body
 {
     margin: 0;
 }
-
 
 #rsv {
     padding-top: 0;
@@ -31,10 +28,7 @@ body
 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5em;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto auto 1.5em;
     padding-top: 0;
     width: 95%;
 
@@ -53,6 +47,7 @@ body
     margin-left: 2em;
     padding-top: 2.5em;
 }
+
 .rsv-header__inscription
 {
     text-decoration: none;
@@ -92,8 +87,7 @@ body
 .rsv-search__icon
 {
     margin-right: 1em;
-    border: 1px solid;
-    border-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
     padding: 15px;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
@@ -110,14 +104,14 @@ body
     padding: 1em;
     font-size: 1em;
     border: none;
-    margin-right: 0px;
+    margin-right: 0;
 }
 .rsv-search__serchbar:focus
 {
     padding: 1em;
     font-size: 1em;
     border: none;
-    margin-right: 0px;
+    margin-right: 0;
     outline-width: 0;
 }
 
@@ -151,8 +145,7 @@ body
 {
     margin-right: 1em;
     color:#0065FC;
-    border: 2px solid;
-    border-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 2em;
     display: inline-block;
     height: fit-content;
@@ -168,8 +161,7 @@ body
 {
     margin-right: 1em;
     color:#0065FC;
-    border: 2px solid;
-    border-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 2em;
     display: inline-block;
     height: fit-content;
@@ -179,8 +171,7 @@ body
 .rsv-filter__icon
 {
     margin-right: 1em;
-    border: 1px solid;
-    border-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
     border-radius: 2em;
     padding: 1em;
     background-color: #DEEBFF;
@@ -261,6 +252,7 @@ body
     display: flex;
     justify-content: space-evenly;
     height: fit-content;
+    margin-bottom: 4em;
 }
 
 .rsv-lodging--classic
@@ -469,7 +461,7 @@ body
     margin-left: 2.5em;
 }
 
-@media all and (min-width: 800px) and (max-width: 1750px)
+@media all and (min-width: 1024px) and (max-width: 1750px)
 {
     .rsv-lodging--container
     {
@@ -477,6 +469,7 @@ body
         justify-content: space-evenly;
         flex-direction: column;
         width: 97.5%;
+        margin-bottom: 4em;
     }
 
     .rsv-lodging--classic
@@ -623,10 +616,6 @@ body
 
     }
 
-    #activites
-    {
-        margin-top: 3em;
-    }
 
 
     #rsv-footer--container
@@ -646,7 +635,7 @@ body
 
 }
 
-@media all and (max-device-width: 800px)
+@media all and (max-width: 1024px)
 {
     #rsv
     {
@@ -759,6 +748,11 @@ body
         flex-wrap: wrap;
     }
 
+    .rsv-searchsection--content
+    {
+        flex-wrap: nowrap;
+    }
+
     .rsv-searchsection--content--paragraph
     {
         font-size: 2em;
@@ -770,6 +764,7 @@ body
         border: 2px solid #F2F2F2;
         padding: 0;
         border-radius: 1.5em;
+        flex-wrap: nowrap;
     }
 
     .rsv-searchsection--content
@@ -785,9 +780,8 @@ body
     .rsv-search__mediaicon
     {
         display: inline;
-        border: 1px solid;
-        border-color: #F2F2F2;
-        padding: 1.2em;
+        border: 1px solid #F2F2F2;
+        padding: 0.5em;
         background-color: #F2F2F2;
         border-top-left-radius: 1em;
         border-bottom-left-radius: 1em;
@@ -796,10 +790,11 @@ body
 
     .rsv-search__serchbar
     {
-        font-size: 1.5em;
+        font-size: 1em;
         border: none;
         margin-top: 0;
-        padding-top: 0.8em;
+        padding: 0;
+        width: 10em;
     }
 
     .rsv-search__serchbar:focus
@@ -818,8 +813,7 @@ body
     .rsv-search__mediabutton
     {
         display: inline;
-        padding: 1.2em;
-        height: border-box;
+        padding: 0.5em;
         background: #2196F3;
         color: white;
         border: none;
@@ -847,8 +841,7 @@ body
     {
         margin-right: 1em;
         color:#0065FC;
-        border: 2px solid;
-        border-color: #F2F2F2;
+        border: 2px solid #F2F2F2;
         border-radius: 4em;
         display: flex;
         align-items: center;
@@ -867,8 +860,7 @@ body
     {
         margin-right: 1em;
         color:#0065FC;
-        border: 2px solid;
-        border-color: #F2F2F2;
+        border: 2px solid #F2F2F2;
         border-radius: 4em;
         display: flex;
         align-items: center;
@@ -881,8 +873,7 @@ body
     .rsv-filter__mediaicon
     {
         display: inherit;
-        border: 1px solid;
-        border-color: #DEEBFF;
+        border: 1px solid #DEEBFF;
         border-radius: 4em;
         padding: 1em;
         background-color: #DEEBFF;
@@ -895,8 +886,7 @@ body
     {
         display: none;
         margin-right: 1em;
-        border: 1px solid;
-        border-color: #DEEBFF;
+        border: 1px solid #DEEBFF;
         border-radius: 3em;
         padding: 2.5em;
         background-color: #DEEBFF;
@@ -1107,7 +1097,7 @@ body
 
     #activites
     {
-        margin-top: 0em;
+        margin-top: 0;
         font-size: 3em;
     }
 
@@ -1179,10 +1169,7 @@ body
 
     .rsv-footer--content
     {
-        margin-right: 0;
-        margin-top: 0;
-        margin-left: 1em;
-        margin-bottom: 2em;
+        margin: 0 0 2em 1em;
         white-space: nowrap;
         text-align: inherit;
         font-size: 2em;
