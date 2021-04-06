@@ -220,17 +220,29 @@ body
 {
     display: flex;
     align-items: center;
+    margin-bottom: 2em;
 }
 
-.rsv-info--icon
+.rsv-info--circle
 {
-    color: white;
-    background-color: #0065FC;
-    margin-right: 1em;
-    border: 0.5px solid;
-    border-color: grey;
-    border-radius: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.75em;
+    padding: 2px;
+}
 
+.rsv-info--mediacircle
+{
+    display: none;
+}
+
+.rsv-info--icon {
+    color: #0065FC;
 }
 
 .rsv-info--mediaicon
@@ -871,24 +883,36 @@ body
     .rsv-info
     {
         display: flex;
-        align-items: center;
+        align-items: baseline;
+    }
+
+    .rsv-info--circle
+    {
+        display: none;
     }
 
     .rsv-info--icon
     {
         display: none;
+    }
 
+    .rsv-info--mediacircle
+    {
+        width: 1.5em;
+        height: 1.5em;
+        border: 2px solid lightgrey;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.5em;
+        padding: 1em;
     }
 
     .rsv-info--mediaicon
     {
         display: inherit;
-        color: white;
-        background-color: #0065FC;
-        margin-right: 0.5em;
-        border: 0.5px solid;
-        border-color: grey;
-        border-radius: 1em;
+        color: #0065FC;
     }
 
     .rsv-info--text
