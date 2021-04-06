@@ -295,6 +295,16 @@ body
     margin-bottom: 0.5em;
 }
 
+.rsv-lodging--rating_star
+{
+    color: #F2F2F2;
+}
+
+.checked
+{
+    color: #0065FC;
+}
+
 .rsv-lodging--classic-card
 {
     background-color: white;
@@ -380,12 +390,6 @@ body
 {
     margin-top: 2em;
 }
-
-.checked
-{
-    color: #0065FC;
-}
-
 
 .rsv-activities--imagexl
 {
@@ -718,7 +722,7 @@ body
 
     #rsv-searchsection--title {
         margin-top: 7%;
-        font-size: 3em;
+        font-size: 2.5em;
         flex-wrap: wrap;
     }
 
