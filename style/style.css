@@ -291,6 +291,8 @@ body
     margin-right: 2em;
     margin-bottom: 2.5em;
     padding: 0.5em;
+    text-decoration: none;
+    color: black;
 
 }
 
@@ -337,6 +339,8 @@ body
     border-radius: 1.5em;
     padding: 0.5em;
     margin-bottom: 2.5em;
+    text-decoration: none;
+    color: black;
 }
 
 .rsv-popular--cardcontent
@@ -396,6 +400,8 @@ body
     background-color: white;
     border-radius: 2.5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    color: black;
 }
 
 .rsv-activities--card2
@@ -404,6 +410,8 @@ body
     width: 25em;
     border-radius: 2.5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    color: black;
 }
 
 .rsv-activities__carddouble
