@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Reservia</title>
 
@@ -13,284 +14,287 @@
 <body>
 <header class="rsv-header">
     <img class="rsv-header__logo" src="./images/logo/Reservia.svg" alt="Logo de la société Reservia">
-    <a class="rsv-header__mediainscription" href="#inscription"><b>S'inscrire</b></a>
+    <a class="rsv-header__mediainscription" href="emptyLink.html"><b>S'inscrire</b></a>
     <nav>
         <div class="rsv-header">
             <a class="rsv-header__link" href="#hebergements">Hébergements</a>
             <a class="rsv-header__link" href="#activites">Activités</a>
-            <a class="rsv-header__inscription" href="#inscription"><b>S'inscrire</b></a>
+            <a class="rsv-header__inscription" href="emptyLink.html"><b>S'inscrire</b></a>
         </div>
     </nav>
 </header>
-<section>
-    <div class="rsv-mediaheader--container">
-        <div class="rsv-mediaheader">
-            <a class="rsv-header__medialink1" href="#hebergements">Hébergements</a>
-        </div>
 
-        <div class="rsv-mediaheader">
-            <a class="rsv-header__medialink2" href="#activites">Activités</a>
-        </div>
+<div class="rsv-mediaheader--container">
+    <div class="rsv-mediaheader">
+        <a class="rsv-header__medialink1" href="#hebergements">Hébergements</a>
     </div>
 
-    <div id="rsv">
+    <div class="rsv-mediaheader">
+        <a class="rsv-header__medialink2" href="#activites">Activités</a>
+    </div>
+</div>
 
-        <article>
-            <div class="rsv-media">
-                <h3 id="rsv-searchsection--title">Trouver votre hébergement pour des vacances de rêves</h3>
-                <p class="rsv-searchsection--content--paragraph">En plein centre ville ou en pleine nature</p>
-                <div class="rsv-search rsv-searchsection--content">
+<div id="rsv">
+
+    <article>
+        <div class="rsv-media">
+            <h3 id="rsv-searchsection--title">Trouver votre hébergement pour des vacances de rêves</h3>
+            <p class="rsv-searchsection--content--paragraph">En plein centre ville ou en pleine nature</p>
+            <div class="rsv-search rsv-searchsection--content">
+
+                <label>
                     <i class="fas fa-map-marker-alt rsv-search__icon"></i>
                     <i class="fas fa-map-marker-alt fa-lg rsv-search__mediaicon"></i>
                     <input class="rsv-search__serchbar" type="text" placeholder="Marseille, France" />
                     <a class="rsv-search__button">Rechercher</a>
                     <i class="fas fa-search fa-lg rsv-search__mediabutton"></i>
-                </div>
+                </label>
 
-                <div class="rsv-filter--mediaorganiser">
-                    <div class="rsv-filter__list">
-                        <div class="rsv-filter__title">
-                            <h3><b> Filtres</b></h3>
-                        </div>
+            </div>
 
-                        <div class="rsv-filter-align--ecoandfam">
-                            <div class="rsv-filter__modal">
-                                <i class="fas fa-money-bill-wave rsv-filter__icon"></i>
-                                <i class="fas fa-money-bill-wave fa-2x rsv-filter__mediaicon"></i>
-                                <b class="rsv-filter--txt">Economique</b>
-                            </div>
-                            <div class="rsv-filter__modal">
-                                <i class="fas fa-child rsv-filter__icon"></i>
-                                <i class="fas fa-child fa-2x rsv-filter__mediaicon"></i>
-                                <b class="rsv-filter--txt">Familial</b>
-                            </div>
+            <div class="rsv-filter--mediaorganiser">
+                <div class="rsv-filter__list">
+                    <div class="rsv-filter__title">
+                        <h3><b> Filtres</b></h3>
+                    </div>
+
+                    <div class="rsv-filter-align--ecoandfam">
+                        <div class="rsv-filter__modal">
+                            <i class="fas fa-money-bill-wave rsv-filter__icon"></i>
+                            <i class="fas fa-money-bill-wave fa-2x rsv-filter__mediaicon"></i>
+                            <b class="rsv-filter--txt">Economique</b>
                         </div>
                         <div class="rsv-filter__modal">
-                            <i class="fas fa-heart rsv-filter__icon"></i>
-                            <i class="fas fa-heart fa-2x rsv-filter__mediaicon"></i>
-                            <b class="rsv-filter--txt">Romantique</b>
-                        </div>
-                        <div class="rsv-filter__modal">
-                            <i class="fas fa-dog rsv-filter__icon"></i>
-                            <i class="fas fa-dog fa-2x rsv-filter__mediaicon"></i>
-                            <b class="rsv-filter--txt">Animaux autorisés</b>
+                            <i class="fas fa-child rsv-filter__icon"></i>
+                            <i class="fas fa-child fa-2x rsv-filter__mediaicon"></i>
+                            <b class="rsv-filter--txt">Familial</b>
                         </div>
                     </div>
-                </div>
-
-                <div class="rsv-info">
-                    <div class="rsv-info--circle">
-                        <i class="fas fa-info fa-sm rsv-info--icon"></i>
+                    <div class="rsv-filter__modal">
+                        <i class="fas fa-heart rsv-filter__icon"></i>
+                        <i class="fas fa-heart fa-2x rsv-filter__mediaicon"></i>
+                        <b class="rsv-filter--txt">Romantique</b>
                     </div>
-
-                    <div class="rsv-info--mediacircle">
-                        <i class="fas fa-info fa-2x rsv-info--mediaicon"></i>
+                    <div class="rsv-filter__modal">
+                        <i class="fas fa-dog rsv-filter__icon"></i>
+                        <i class="fas fa-dog fa-2x rsv-filter__mediaicon"></i>
+                        <b class="rsv-filter--txt">Animaux autorisés</b>
                     </div>
-
-                    <p class="rsv-info--text">Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-            </div>
-        </article>
-
-        <article>
-            <div class="rsv-lodging--container">
-                <div class="rsv-lodging--classic">
-                    <h2 id="hebergements">Hébergements à Marseille</h2>
-                    <div class="rsv-lodging--list">
-                        <a class="rsv-lodging--classic-card" href="emptyLink.html">
-                            <img class="rsv-lodging--images" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
-                            <div class="rsv-lodging--classic-carcontent">
-                                <h4>Auberge de la Cannebière</h4>
-                                <p>Nuit à partir de 25€</p>
-                                <div class="rsv-lodging--rating">
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="rsv-lodging--classic-card" href="emptyLink.html">
-                            <img class="rsv-lodging--images" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" />
-                            <div class="rsv-lodging--classic-carcontent">
-                                <h4>Hôtel du port </h4>
-                                <p>Nuit à partir de 52€</p>
-                                <div class="rsv-lodging--rating">
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="rsv-lodging--classic-card" href="emptyLink.html">
-                            <img class="rsv-lodging--images" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"/>
-                            <div class="rsv-lodging--classic-carcontent">
-                                <h4>Hôtel Les mouettes</h4>
-                                <p>Nuit à partir de 76€</p>
-                                <div class="rsv-lodging--rating">
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="rsv-lodging--list">
-                        <a class="rsv-lodging--classic-card" href="emptyLink.html">
-                            <img class="rsv-lodging--images" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"/>
-                            <div class="rsv-lodging--classic-carcontent">
-                                <h4>Hôtel de la mer</h4>
-                                <p>Nuit à partir de 46€</p>
-                                <div class="rsv-lodging--rating">
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="rsv-lodging--classic-card" href="emptyLink.html">
-                            <img class="rsv-lodging--images" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"/>
-                            <div class="rsv-lodging--classic-carcontent">
-                                <h4>Auberge Le panier</h4>
-                                <p>Nuit à partir de 23€</p>
-                                <div class="rsv-lodging--rating">
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="rsv-lodging--classic-card" href="emptyLink.html">
-                            <img class="rsv-lodging--images" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
-                            <div class="rsv-lodging--classic-carcontent">
-                                <h4>Hôtel chez Amina</h4>
-                                <p>Nuit à partir de 96€</p>
-                                <div class="rsv-lodging--rating">
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <h4 class="rsv-lodging--print-more">Afficher plus</h4>
-                </div>
-
-                <div class="rsv-lodging--popular">
-
-                    <div class="rsv-lodging--pophead">
-                        <h2 class="rsv-popular-pophead--text">Les plus populaires</h2>
-                        <i class="fas fa-chart-line fa-2x rsv-popular__icon"></i>
-                        <i class="fas fa-chart-line fa-3x rsv-popular__mediaicon"></i>
-                    </div>
-
-                    <div class="rsv-lodging--poplist">
-                        <a class="rsv-popular--card" href="emptyLink.html">
-                            <img class="rsv-lodging--images__pop" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
-                            <div class="rsv-popular--cardcontent">
-                                <h4>Hôtel Le soleil du matin</h4>
-                                <p>Nuit à partir de 128€</p>
-                                <div class="rsv-lodging--rating rsv-popular__rating">
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="rsv-popular--card rsv-popular--card__space" href="emptyLink.html">
-                            <img class="rsv-lodging--images__pop"  src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"/>
-                            <div class="rsv-popular--cardcontent">
-                                <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                                <p>Nuit à partir de 71€</p>
-                                <div class="rsv-lodging--rating rsv-popular__rating">
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star"></i>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="rsv-popular--card rsv-popular--card__space" href="emptyLink.html">
-                            <img class="rsv-lodging--images__pop"  src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"/>
-                            <div class="rsv-popular--cardcontent">
-                                <h4>Hôtel Tout bleu et Blanc</h4>
-                                <p>Nuit à partir de 68€</p>
-                                <div class="rsv-lodging--rating rsv-popular__rating">
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star checked"></i>
-                                    <i class="fas fa-star rsv-lodging--rating_star"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
                 </div>
             </div>
 
+            <div class="rsv-info">
+                <div class="rsv-info--circle">
+                    <i class="fas fa-info fa-sm rsv-info--icon"></i>
+                </div>
 
+                <div class="rsv-info--mediacircle">
+                    <i class="fas fa-info fa-2x rsv-info--mediaicon"></i>
+                </div>
 
-        </article>
+                <p class="rsv-info--text">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </div>
+    </article>
 
-        <article>
-            <div class="rsv-media">
-
-                <h3 id="activites">Activités à Marseille</h3>
-
-                <div class="rsv-activities--container">
-
-                    <a class="rsv-activities--card1" href="emptyLink.html">
-                        <img class="rsv-activities--imagexl" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
-                        <h4 class="rsv-activities--headers">Vieux Port</h4>
+    <article>
+        <div class="rsv-lodging--container">
+            <div class="rsv-lodging--classic">
+                <h2 id="hebergements">Hébergements à Marseille</h2>
+                <div class="rsv-lodging--list">
+                    <a class="rsv-lodging--classic-card" href="emptyLink.html">
+                        <img class="rsv-lodging--images" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image d'une chambre d'hôtel"/>
+                        <div class="rsv-lodging--classic-carcontent">
+                            <h4>Auberge de la Cannebière</h4>
+                            <p>Nuit à partir de 25€</p>
+                            <div class="rsv-lodging--rating">
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star"></i>
+                            </div>
+                        </div>
                     </a>
-
-                    <div class="rsv-activities__carddouble">
-                        <a class="rsv-activities--card2" href="emptyLink.html">
-                            <img class="rsv-activities--imagesm" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
-                            <h4 class="rsv-activities--headers">Fort Pomègues</h4>
-                        </a>
-                        <a class="rsv-activities--card2" href="emptyLink.html">
-                            <img class="rsv-activities--imagesm" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
-                            <h4 class="rsv-activities--headers">Iles de Frioul</h4>
-                        </a>
-                    </div>
-
-                    <a class="rsv-activities--card1" href="emptyLink.html">
-                        <img class="rsv-activities--imagexl"  src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>
-                        <h4 class="rsv-activities--headers">Parc National des Calanques</h4>
+                    <a class="rsv-lodging--classic-card" href="emptyLink.html">
+                        <img class="rsv-lodging--images" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image d'une chambre d'hôtel"/>
+                        <div class="rsv-lodging--classic-carcontent">
+                            <h4>Hôtel du port </h4>
+                            <p>Nuit à partir de 52€</p>
+                            <div class="rsv-lodging--rating">
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                            </div>
+                        </div>
                     </a>
-
-                    <div class="rsv-activities__carddouble">
-                        <a class="rsv-activities--card2" href="emptyLink.html">
-                            <img class="rsv-activities--imagesm"  src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" />
-                            <h4 class="rsv-activities--headers">Notre-Dame-de-la-Garde</h4>
-                        </a>
-                        <a class="rsv-activities--card2" href="emptyLink.html">
-                            <img class="rsv-activities--imagesm"  src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
-                            <h4 class="rsv-activities--headers">Parc de Longchamp</h4>
-                        </a>
-                    </div>
-
+                    <a class="rsv-lodging--classic-card" href="emptyLink.html">
+                        <img class="rsv-lodging--images" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image d'une chambre d'hôtel"/>
+                        <div class="rsv-lodging--classic-carcontent">
+                            <h4>Hôtel Les mouettes</h4>
+                            <p>Nuit à partir de 76€</p>
+                            <div class="rsv-lodging--rating">
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <div class="rsv-lodging--list">
+                    <a class="rsv-lodging--classic-card" href="emptyLink.html">
+                        <img class="rsv-lodging--images" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image d'une chambre d'hôtel"/>
+                        <div class="rsv-lodging--classic-carcontent">
+                            <h4>Hôtel de la mer</h4>
+                            <p>Nuit à partir de 46€</p>
+                            <div class="rsv-lodging--rating">
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="rsv-lodging--classic-card" href="emptyLink.html">
+                        <img class="rsv-lodging--images" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image d'une chambre d'hôtel"/>
+                        <div class="rsv-lodging--classic-carcontent">
+                            <h4>Auberge Le panier</h4>
+                            <p>Nuit à partir de 23€</p>
+                            <div class="rsv-lodging--rating">
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="rsv-lodging--classic-card" href="emptyLink.html">
+                        <img class="rsv-lodging--images" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image d'une chambre d'hôtel"/>
+                        <div class="rsv-lodging--classic-carcontent">
+                            <h4>Hôtel chez Amina</h4>
+                            <p>Nuit à partir de 96€</p>
+                            <div class="rsv-lodging--rating">
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <h4 class="rsv-lodging--print-more">Afficher plus</h4>
             </div>
-        </article>
-    </div>
-</section>
+
+            <div class="rsv-lodging--popular">
+
+                <div class="rsv-lodging--pophead">
+                    <h2 class="rsv-popular-pophead--text">Les plus populaires</h2>
+                    <i class="fas fa-chart-line fa-2x rsv-popular__icon"></i>
+                    <i class="fas fa-chart-line fa-3x rsv-popular__mediaicon"></i>
+                </div>
+
+                <div class="rsv-lodging--poplist">
+                    <a class="rsv-popular--card" href="emptyLink.html">
+                        <img class="rsv-lodging--images__pop" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image d'une chambre d'hôtel"/>
+                        <div class="rsv-popular--cardcontent">
+                            <h4>Hôtel Le soleil du matin</h4>
+                            <p>Nuit à partir de 128€</p>
+                            <div class="rsv-lodging--rating rsv-popular__rating">
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="rsv-popular--card rsv-popular--card__space" href="emptyLink.html">
+                        <img class="rsv-lodging--images__pop"  src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image d'une chambre d'hôtel"/>
+                        <div class="rsv-popular--cardcontent">
+                            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                            <p>Nuit à partir de 71€</p>
+                            <div class="rsv-lodging--rating rsv-popular__rating rsv-popular-rating__modifier">
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="rsv-popular--card rsv-popular--card__space" href="emptyLink.html">
+                        <img class="rsv-lodging--images__pop"  src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image d'une chambre d'hôtel"/>
+                        <div class="rsv-popular--cardcontent">
+                            <h4>Hôtel Tout bleu et Blanc</h4>
+                            <p>Nuit à partir de 68€</p>
+                            <div class="rsv-lodging--rating rsv-popular__rating">
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star checked"></i>
+                                <i class="fas fa-star rsv-lodging--rating_star"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </article>
+
+    <article>
+        <div class="rsv-media">
+
+            <h2 id="activites">Activités à Marseille</h2>
+
+            <div class="rsv-activities--container">
+
+                <a class="rsv-activities--card1" href="emptyLink.html">
+                    <img class="rsv-activities--imagexl" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image du Vieux Port à Marseille"/>
+                    <h4 class="rsv-activities--headers">Vieux Port</h4>
+                </a>
+
+                <div class="rsv-activities__carddouble">
+                    <a class="rsv-activities--card2" href="emptyLink.html">
+                        <img class="rsv-activities--imagesm" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image du Fort de Pomègues"/>
+                        <h4 class="rsv-activities--headers">Fort Pomègues</h4>
+                    </a>
+                    <a class="rsv-activities--card2" href="emptyLink.html">
+                        <img class="rsv-activities--imagesm" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image d'une vue sur les îles de Frioul"/>
+                        <h4 class="rsv-activities--headers">Iles de Frioul</h4>
+                    </a>
+                </div>
+
+                <a class="rsv-activities--card1" href="emptyLink.html">
+                    <img class="rsv-activities--imagexl"  src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image du parc national des Calanques"/>
+                    <h4 class="rsv-activities--headers">Parc National des Calanques</h4>
+                </a>
+
+                <div class="rsv-activities__carddouble">
+                    <a class="rsv-activities--card2" href="emptyLink.html">
+                        <img class="rsv-activities--imagesm"  src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image de l'église Notre-Dame-de-la-Garde" />
+                        <h4 class="rsv-activities--headers">Notre-Dame-de-la-Garde</h4>
+                    </a>
+                    <a class="rsv-activities--card2" href="emptyLink.html">
+                        <img class="rsv-activities--imagesm"  src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image du parc de Longchamp"/>
+                        <h4 class="rsv-activities--headers">Parc de Longchamp</h4>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+</div>
 
 <footer id="rsv-footer--container">
     <div class="rsv-footer--content rsv-footer__content1">

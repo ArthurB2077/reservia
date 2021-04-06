@@ -3,7 +3,6 @@
 {
         font-family: Raleway;
         src : local("/style/font/variable/Raleway-VariableFont_wght.ttf");
-
 }
 
 *
@@ -11,12 +10,10 @@
     font-family: 'Raleway', serif;
 }
 
-
 body
 {
     margin: 0;
 }
-
 
 #rsv {
     padding-top: 0;
@@ -31,10 +28,7 @@ body
 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5em;
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto auto 1.5em;
     padding-top: 0;
     width: 95%;
 
@@ -53,6 +47,7 @@ body
     margin-left: 2em;
     padding-top: 2.5em;
 }
+
 .rsv-header__inscription
 {
     text-decoration: none;
@@ -92,8 +87,7 @@ body
 .rsv-search__icon
 {
     margin-right: 1em;
-    border: 1px solid;
-    border-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
     padding: 15px;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
@@ -110,14 +104,14 @@ body
     padding: 1em;
     font-size: 1em;
     border: none;
-    margin-right: 0px;
+    margin-right: 0;
 }
 .rsv-search__serchbar:focus
 {
     padding: 1em;
     font-size: 1em;
     border: none;
-    margin-right: 0px;
+    margin-right: 0;
     outline-width: 0;
 }
 
@@ -151,8 +145,7 @@ body
 {
     margin-right: 1em;
     color:#0065FC;
-    border: 2px solid;
-    border-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 2em;
     display: inline-block;
     height: fit-content;
@@ -168,8 +161,7 @@ body
 {
     margin-right: 1em;
     color:#0065FC;
-    border: 2px solid;
-    border-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 2em;
     display: inline-block;
     height: fit-content;
@@ -179,8 +171,7 @@ body
 .rsv-filter__icon
 {
     margin-right: 1em;
-    border: 1px solid;
-    border-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
     border-radius: 2em;
     padding: 1em;
     background-color: #DEEBFF;
@@ -261,6 +252,7 @@ body
     display: flex;
     justify-content: space-evenly;
     height: fit-content;
+    margin-bottom: 4em;
 }
 
 .rsv-lodging--classic
@@ -414,6 +406,7 @@ body
     display: flex;
     justify-content: space-between;
     margin-bottom: 4em;
+    width: auto;
 }
 
 .rsv-activities--card1
@@ -468,14 +461,15 @@ body
     margin-left: 2.5em;
 }
 
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width: 1000px) and (max-width: 1750px)
+@media all and (min-width: 1024px) and (max-width: 1750px)
 {
     .rsv-lodging--container
     {
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
+        width: 97.5%;
+        margin-bottom: 4em;
     }
 
     .rsv-lodging--classic
@@ -496,6 +490,7 @@ body
     .rsv-lodging--classic-card
     {
         display: flex;
+        flex-direction: column;
         background-color: white;
         border: 1px solid white;
         border-radius: 1.5em;
@@ -508,22 +503,26 @@ body
     {
         flex-direction: column;
         justify-content: center;
-        margin-left: 2em;
+        margin-left: 0.5em;
     }
 
     .rsv-lodging--images
     {
-        width: 50%;
-        height: 11em;
+        width: 100%;
+        height: 10em;
         border-top-left-radius: 1.5em;
-        border-bottom-left-radius: 1.5em;
-        border-top-right-radius: 0;
+        border-top-right-radius: 1.5em;
     }
 
     .rsv-lodging--pophead
     {
         display: flex;
         margin-bottom: 1em;
+    }
+
+    .rsv-popular__icon
+    {
+        margin-right: 1.2em;
     }
 
     .rsv-lodging--popular
@@ -537,12 +536,12 @@ body
         margin-top: 2em;
     }
 
-
-
     .rsv-lodging--poplist
     {
         display: flex;
         justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
     }
 
     .rsv-popular--card
@@ -554,13 +553,40 @@ body
         padding: 0.5em;
         margin-bottom: 2.5em;
         margin-right: 2em;
-        width: 30%;
+        width: 100%;
+        height: 19em;
+        flex-direction: column;
+    }
+
+
+    .rsv-popular--card__space
+    {
+        margin-top: inherit;
+    }
+
+    .rsv-popular--cardcontent
+    {
+        margin-left: 0.5em;
+    }
+
+    .rsv-popular-rating__modifier
+    {
+        margin-top: 0;
+    }
+
+    .rsv-lodging--images__pop
+    {
+        width: 100%;
+        height: 10em;
+        border-top-right-radius: 1.5em;
+        border-bottom-left-radius: 0;
     }
 
     .rsv-activities--container
     {
         flex-direction: column;
         margin-bottom: 8em;
+        width: 97.5%;
     }
 
     .rsv-activities--card1
@@ -590,10 +616,6 @@ body
 
     }
 
-    #activites
-    {
-        margin-top: 3em;
-    }
 
 
     #rsv-footer--container
@@ -613,7 +635,7 @@ body
 
 }
 
-@media all and (min-width: 250px) and (max-width: 1000px)
+@media all and (max-width: 1024px)
 {
     #rsv
     {
@@ -726,6 +748,11 @@ body
         flex-wrap: wrap;
     }
 
+    .rsv-searchsection--content
+    {
+        flex-wrap: nowrap;
+    }
+
     .rsv-searchsection--content--paragraph
     {
         font-size: 2em;
@@ -737,6 +764,7 @@ body
         border: 2px solid #F2F2F2;
         padding: 0;
         border-radius: 1.5em;
+        flex-wrap: nowrap;
     }
 
     .rsv-searchsection--content
@@ -752,9 +780,8 @@ body
     .rsv-search__mediaicon
     {
         display: inline;
-        border: 1px solid;
-        border-color: #F2F2F2;
-        padding: 1.2em;
+        border: 1px solid #F2F2F2;
+        padding: 0.5em;
         background-color: #F2F2F2;
         border-top-left-radius: 1em;
         border-bottom-left-radius: 1em;
@@ -763,10 +790,11 @@ body
 
     .rsv-search__serchbar
     {
-        font-size: 1.5em;
+        font-size: 1em;
         border: none;
         margin-top: 0;
-        padding-top: 0.8em;
+        padding: 0;
+        width: 10em;
     }
 
     .rsv-search__serchbar:focus
@@ -785,8 +813,7 @@ body
     .rsv-search__mediabutton
     {
         display: inline;
-        padding: 1.2em;
-        height: border-box;
+        padding: 0.5em;
         background: #2196F3;
         color: white;
         border: none;
@@ -814,8 +841,7 @@ body
     {
         margin-right: 1em;
         color:#0065FC;
-        border: 2px solid;
-        border-color: #F2F2F2;
+        border: 2px solid #F2F2F2;
         border-radius: 4em;
         display: flex;
         align-items: center;
@@ -834,8 +860,7 @@ body
     {
         margin-right: 1em;
         color:#0065FC;
-        border: 2px solid;
-        border-color: #F2F2F2;
+        border: 2px solid #F2F2F2;
         border-radius: 4em;
         display: flex;
         align-items: center;
@@ -848,8 +873,7 @@ body
     .rsv-filter__mediaicon
     {
         display: inherit;
-        border: 1px solid;
-        border-color: #DEEBFF;
+        border: 1px solid #DEEBFF;
         border-radius: 4em;
         padding: 1em;
         background-color: #DEEBFF;
@@ -862,8 +886,7 @@ body
     {
         display: none;
         margin-right: 1em;
-        border: 1px solid;
-        border-color: #DEEBFF;
+        border: 1px solid #DEEBFF;
         border-radius: 3em;
         padding: 2.5em;
         background-color: #DEEBFF;
@@ -929,11 +952,17 @@ body
         display: flex;
         margin-bottom: 1em;
         margin-left: 1em;
+        width: auto;
     }
 
     .rsv-popular__icon
     {
         padding-right: 1.2em;
+    }
+
+    .rsv-lodging--poplist
+    {
+        flex-direction: column;
     }
 
     .rsv-lodging--popular
@@ -961,7 +990,9 @@ body
         padding: 0.5em;
         margin-bottom: 2.5em;
         margin-right: 2em;
-        width: auto;
+        width: 95%;
+        height: fit-content;
+        flex-direction: row;
     }
 
     .rsv-popular--cardcontent
@@ -980,14 +1011,16 @@ body
     .rsv-popular__mediaicon
     {
         display: inherit;
+        margin-right: 1em;
     }
 
     .rsv-lodging--images__pop
     {
-        width: 300px;
+        width: 350px;
         height: 300px;
         border-top-left-radius: 1.5em;
         border-bottom-left-radius: 1.5em;
+        border-top-right-radius: 0;
     }
 
     .rsv-lodging--container
@@ -1057,13 +1090,14 @@ body
     .rsv-lodging--print-more
     {
         padding:0.5em;
-        margin-top: 0;
-        font-size: 3em;
+        margin-top: 0.5em;
+        font-size: 2em;
+        margin-bottom: 3em;
     }
 
     #activites
     {
-        margin-top: 0em;
+        margin-top: 0;
         font-size: 3em;
     }
 
@@ -1135,10 +1169,7 @@ body
 
     .rsv-footer--content
     {
-        margin-right: 0;
-        margin-top: 0;
-        margin-left: 1em;
-        margin-bottom: 2em;
+        margin: 0 0 2em 1em;
         white-space: nowrap;
         text-align: inherit;
         font-size: 2em;
