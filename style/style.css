@@ -247,6 +247,7 @@ body
 {
     display: flex;
     justify-content: space-evenly;
+    height: fit-content;
 }
 
 .rsv-lodging--classic
@@ -274,15 +275,11 @@ body
     display: flex;
 }
 
-.rsv-lodging--poplist
-{
-    list-style-type: none;
-}
-
 .rsv-lodging--rating
 {
     list-style-type: none;
     display: flex;
+    margin-bottom: 0.5em;
 }
 
 .rsv-lodging--classic-card
@@ -306,7 +303,8 @@ body
 .rsv-lodging--print-more
 {
     padding:0.5em;
-    margin-top: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .rsv-lodging--pophead
@@ -330,6 +328,7 @@ body
     padding: 2em;
     border-radius: 1.5em;
     margin-left: 2.5em;
+    margin-bottom: 0;
 }
 
 .rsv-popular--card
@@ -339,11 +338,14 @@ body
     border: 1px solid white;
     border-radius: 1.5em;
     padding: 0.5em;
-    margin-bottom: 2.5em;
     text-decoration: none;
     color: black;
 }
 
+.rsv-popular--card__space
+{
+    margin-top: 2.5em;
+}
 .rsv-popular--cardcontent
 {
     flex-direction: column;
@@ -394,7 +396,7 @@ body
 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8em;
+    margin-bottom: 4em;
 }
 
 .rsv-activities--card1
@@ -438,7 +440,7 @@ body
 
 .rsv-footer--content
 {
-    margin-right: 30em;
+    margin-right: 23%;
     margin-top: 2em;
     margin-bottom: 2em;
     white-space: nowrap;
@@ -593,7 +595,6 @@ body
     }
 
 }
-
 
 @media all and (min-width: 250px) and (max-width: 1000px)
 {
