@@ -1,66 +1,72 @@
-/*Body style content start here*/
 @font-face
 {
         font-family: Raleway;
         src : local("/style/font/variable/Raleway-VariableFont_wght.ttf");
 }
 
+
+
+/*########## Body style START here ##########*/
+
 *
 {
     font-family: 'Raleway', serif;
 }
+/* Font apply on all the page*/
 
 body
 {
     margin: 0;
 }
+/* Allow to backgrounds to fill all the page*/
 
-#rsv {
+#rsv
+{
     padding-top: 0;
     width: 95%;
     margin:auto;
 }
+/* Allow the content of the page to be centered*/
 
-/*Body style content end here*/
+/*########## Body style END here ##########*/
 
-/*Header style content start here*/
+
+
+/*########## Header style apply START here ##########*/
+
 .rsv-header
 {
     display: flex;
     justify-content: space-between;
     margin: auto auto 1.5em;
-    padding-top: 0;
     width: 95%;
-
+    align-items: center;
 }
+/*Align the logo and the navigation menu*/
 
 .rsv-mediaheader
 {
     display: none;
 }
+/*Appear only in breaking point to change the navigation menu*/
+
+.rsv-header__logo
+{
+    padding-top: 1.5em;
+}
+/*Have to write a padding because the logo need to be align with the nav that need also a padding for his blue top line*/
 
 .rsv-header__link
 {
     text-decoration: none;
     color: black;
+    border-top: 2px solid white;
+    /*Avoid a space gap between static and hover link*/
     margin-right: 2em;
     margin-left: 2em;
     padding-top: 2.5em;
 }
-
-.rsv-header__inscription
-{
-    text-decoration: none;
-    color: #0065FC;
-    margin-right: 2em;
-    margin-left: 2em;
-    padding-top: 2.5em;
-}
-
-.rsv-header__mediainscription
-{
-    display: none;
-}
+/*Withdraw default link style, define the space between the elements and had a padding to create the top blue line*/
 
 .rsv-header__link:hover
 {
@@ -72,32 +78,45 @@ body
     margin-left: 2em;
     padding-top: 2.5em;
 }
+/*Allow a top blue line to appear on hover*/
 
-.rsv-header__logo
+.rsv-header__inscription
 {
-    padding-top: 1.5em;
+    text-decoration: none;
+    color: #0065FC;
+    margin-right: 2em;
+    margin-left: 2em;
+    padding-top: 2.5em;
 }
-/*Header style content end here*/
+/* Same as link but not change on hover and have a blue color. Is align with the nav links*/
 
-.rsv-search
+.rsv-header__mediainscription
 {
-    width: fit-content;
+    display: none;
 }
+/*Appear only in breaking point to change the navigation menu*/
 
+/*########## Header style content END here ##########*/
+
+
+
+/*########## Search section START here ##########*/
 .rsv-search__icon
 {
     margin-right: 1em;
     border: 1px solid #F2F2F2;
-    padding: 15px;
+    padding: 1.15em;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+/*Determine the size, the border and the color of the map icon*/
 
 .rsv-search__mediaicon
 {
     display: none;
 }
+/*Appear only in breaking point to change the searchbar*/
 
 .rsv-search__serchbar
 {
@@ -106,6 +125,8 @@ body
     border: none;
     margin-right: 0;
 }
+/*Define the size of the input and the placeholder. Also, withdraw border*/
+
 .rsv-search__serchbar:focus
 {
     padding: 1em;
@@ -114,6 +135,7 @@ body
     margin-right: 0;
     outline-width: 0;
 }
+/*Keep the same style on hover*/
 
 .rsv-search__button
 {
@@ -121,52 +143,45 @@ body
     background: #2196F3;
     color: white;
     font-size: 1em;
-    border: none;
-    cursor: pointer;
     margin-left: 0;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
 }
+/*Make the div a button*/
 
 .rsv-search__mediabutton
 {
     display: none;
 }
+/*Appear only in breaking point to change the searchbar*/
+
+/*########## Search section END here ##########*/
+
+
+
+/*########## Filter section START here ##########*/
 
 .rsv-filter__list
 {
-    list-style-type: none;
     display: flex;
-    margin-top: 1.5em;
+    margin-top: 1.75em;
     margin-bottom: 1.5em;
 }
+/*Contain all the filter and display them in line*/
 
 .rsv-filter__modal
 {
-    margin-right: 1em;
-    color:#0065FC;
-    border: 2px solid #F2F2F2;
-    border-radius: 2em;
     display: inline-block;
     height: fit-content;
     width: fit-content;
-}
-
-.rsv-filter__mediamodal
-{
-    display: none;
-}
-
-#rsv-filter__modal__fam
-{
-    margin-right: 1em;
+    margin-right: 1.5em;
     color:#0065FC;
     border: 2px solid #F2F2F2;
     border-radius: 2em;
-    display: inline-block;
-    height: fit-content;
-    width: fit-content;
 }
+/* Fit content allow the border to have the exact the same than the icon and inline block avoid family icon to return*/
+
+
 
 .rsv-filter__icon
 {
@@ -639,7 +654,7 @@ body
 
     .rsv-header__logo
     {
-        width: 25%;
+        width: 7.5em;
         margin-right: 40%;
         margin-left: 5%;
     }
@@ -726,7 +741,7 @@ body
 
     .rsv-search
     {
-        width: fit-content;
+        width: -moz-fit-content;
         border: 2px solid #F2F2F2;
         padding: 0;
         border-radius: 1em;
@@ -736,6 +751,7 @@ body
 
     .rsv-searchsection--content
     {
+        width: fit-content;
     }
 
     .rsv-search__icon
@@ -799,6 +815,7 @@ body
         flex-direction: column;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
+        width: 100%;
     }
 
     .rsv-filter__modal
@@ -810,8 +827,13 @@ body
         display: flex;
         align-items: center;
         height: fit-content;
-        width: fit-content;
+        width: 50%;
         margin-top: 1em;
+    }
+
+    .rsv-filter--eco
+    {
+        width: 60%;
     }
 
     .rsv-filter-align--ecoandfam
@@ -850,6 +872,7 @@ body
         margin-left: 1em;
         padding-right: 1em;
         flex-wrap: nowrap;
+        align-self: center;
     }
 
     .rsv-filter--mediaorganiser
@@ -917,7 +940,6 @@ body
         margin-bottom: 2.5em;
         margin-right: 2em;
         width: 100%;
-        height: fit-content;
         flex-direction: row;
     }
 
@@ -926,6 +948,7 @@ body
         flex-direction: column;
         justify-content: center;
         margin-left: 1em;
+        flex: 0.6;
     }
 
     .rsv-popular--hotel
@@ -935,12 +958,17 @@ body
 
     .rsv-lodging--images__pop
     {
-        width: 40%;
+        flex: 0.4;
         height: 10em;
         border-top-left-radius: 1.5em;
         border-bottom-left-radius: 1.5em;
         border-top-right-radius: 0;
         padding: 0.5em;
+    }
+
+    .rsv-lodging--images__pop-min
+    {
+        min-width: 175px;
     }
 
     .rsv-popular--card__space
