@@ -186,11 +186,6 @@ body
     color: white;
 }
 
-.rsv-filter__mediaicon
-{
-    display: none;
-}
-
 .rsv-filter--ifam
 {
     height: 0.8em;
@@ -227,18 +222,8 @@ body
     padding: 2px;
 }
 
-.rsv-info--mediacircle
-{
-    display: none;
-}
-
 .rsv-info--icon {
     color: #0065FC;
-}
-
-.rsv-info--mediaicon
-{
-    display: none;
 }
 
 #hebergements
@@ -328,11 +313,6 @@ body
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1em;
-}
-
-.rsv-popular__mediaicon
-{
-    display: none;
 }
 
 .rsv-lodging--popular
@@ -671,7 +651,6 @@ body
         display: inherit;
         text-decoration: none;
         color: #0065FC;
-        font-size: 2em;
         margin: inherit;
         padding: inherit;
     }
@@ -681,7 +660,6 @@ body
         display: none;
         text-decoration: none;
         color: #0065FC;
-        font-size: 2em;
         margin: inherit;
         padding: inherit;
     }
@@ -713,7 +691,6 @@ body
         color: black;
         border-bottom: 3px solid;
         border-bottom-color: #0065FC;
-        font-size: 2.5em;
         padding-bottom: 0.7em;
         text-align: center;
         flex: 1;
@@ -725,7 +702,6 @@ body
         color: black;
         border-bottom: 3px solid;
         border-bottom-color: lightgrey;
-        font-size: 2.5em;
         padding-bottom: 0.7em;
         text-align: center;
         flex: 1;
@@ -739,12 +715,10 @@ body
         color: #0065FC;
         border-bottom: 3px solid;
         border-bottom-color: #0065FC;
-        font-size: 1.5em;
     }
 
     #rsv-searchsection--title {
         margin-top: 7%;
-        font-size: 2.5em;
         flex-wrap: wrap;
     }
 
@@ -755,7 +729,6 @@ body
 
     .rsv-searchsection--content--paragraph
     {
-        font-size: 2em;
     }
 
     .rsv-search
@@ -769,7 +742,6 @@ body
 
     .rsv-searchsection--content
     {
-        font-size: 1.5em;
     }
 
     .rsv-search__icon
@@ -790,7 +762,6 @@ body
 
     .rsv-search__serchbar
     {
-        font-size: 1em;
         border: none;
         margin-top: 0;
         padding: 0;
@@ -800,7 +771,6 @@ body
     .rsv-search__serchbar:focus
     {
         padding: 2em;
-        font-size: 1.5em;
         border: none;
         outline-width: 0;
     }
@@ -825,7 +795,6 @@ body
     {
         padding-right: 1em;
         flex-wrap: wrap-reverse;
-        font-size: 2.5em;
     }
 
     .rsv-filter__list
@@ -870,9 +839,8 @@ body
         align-self: center;
     }
 
-    .rsv-filter__mediaicon
+    .rsv-filter__icon
     {
-        display: inherit;
         border: 1px solid #DEEBFF;
         border-radius: 4em;
         padding: 1em;
@@ -881,21 +849,9 @@ body
         margin: 0;
     }
 
-
-    .rsv-filter__icon
-    {
-        display: none;
-        margin-right: 1em;
-        border: 1px solid #DEEBFF;
-        border-radius: 3em;
-        padding: 2.5em;
-        background-color: #DEEBFF;
-    }
-
     .rsv-filter--txt
     {
         color: black;
-        font-size: 2.4em;
         margin-left: 1em;
         padding-right: 1em;
         flex-wrap: nowrap;
@@ -915,36 +871,21 @@ body
 
     .rsv-info--circle
     {
-        display: none;
-    }
-
-    .rsv-info--icon
-    {
-        display: none;
-    }
-
-    .rsv-info--mediacircle
-    {
-        width: 1.5em;
-        height: 1.5em;
         border: 2px solid lightgrey;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 1.5em;
-        padding: 1em;
     }
 
-    .rsv-info--mediaicon
+    .rsv-info--icon
     {
-        display: inherit;
         color: #0065FC;
     }
 
     .rsv-info--text
     {
-        font-size: 2em;
     }
 
     .rsv-lodging--pophead
@@ -978,7 +919,6 @@ body
 
     .rsv-popular-pophead--text
     {
-        font-size: 3em;
     }
 
     .rsv-popular--card
@@ -1000,24 +940,17 @@ body
         flex-direction: column;
         justify-content: center;
         margin-left: 2em;
-        font-size: 2em;
     }
 
     .rsv-popular__icon
     {
-        display: none;
-    }
 
-    .rsv-popular__mediaicon
-    {
-        display: inherit;
-        margin-right: 1em;
     }
 
     .rsv-lodging--images__pop
     {
-        width: 350px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
         border-top-left-radius: 1.5em;
         border-bottom-left-radius: 1.5em;
         border-top-right-radius: 0;
@@ -1033,7 +966,6 @@ body
 
     #hebergements
     {
-        font-size: 3em;
     }
 
     .rsv-lodging--classic
@@ -1075,7 +1007,6 @@ body
         margin-left: 2em;
         width: auto;
         margin-bottom: 0.5em;
-        font-size: 2em;
     }
 
     .rsv-lodging--images
@@ -1091,14 +1022,12 @@ body
     {
         padding:0.5em;
         margin-top: 0.5em;
-        font-size: 2em;
         margin-bottom: 3em;
     }
 
     #activites
     {
         margin-top: 0;
-        font-size: 3em;
     }
 
     .rsv-activities--container
@@ -1111,7 +1040,6 @@ body
     .rsv-activities--headers
     {
         margin-left: 2em;
-        font-size: 2em;
     }
 
     .rsv-activities--card1
@@ -1172,7 +1100,6 @@ body
         margin: 0 0 2em 1em;
         white-space: nowrap;
         text-align: inherit;
-        font-size: 2em;
     }
 
     .rsv-footer__content1
