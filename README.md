@@ -3,12 +3,11 @@
 
 For the lore, Reservia is a company of flights booking.
 
-This project is a very simple website. Only style effects are used and more particulary SCSS \
-The aim of this project is try to produce something pleasant to use while only using CSS
+This project is a very basic website. Only CSS effects are used and a much of HTML. This is static and looks like more at a template than a real website
 
-You only need a browser to check the website
+This is also my first project so you should expect to see some things very far from perfect
 
-This is also my first project so you should expect to see some things very far from perfect \
+You only need a browser to check the website or check  it out in github-page \
 
 [![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
 
