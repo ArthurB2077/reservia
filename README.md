@@ -8,7 +8,9 @@ The aim of this project is try to produce something pleasant to use while only u
 
 You only need a browser to check the website
 
-This is also my first project so you should expect to see some things very far from perfect
+This is also my first project so you should expect to see some things very far from perfect \
+
+[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
 
 Made with: SCSS - CSS preprocessor, Webstrom - Code editor
 
